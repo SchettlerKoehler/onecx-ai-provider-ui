@@ -1,5 +1,7 @@
 :host ::ng-deep .dashboard-card-link .p-card {
-  transition: transform 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 :host ::ng-deep .dashboard-card-link .p-card:hover {
