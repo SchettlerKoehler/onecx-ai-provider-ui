@@ -68,7 +68,7 @@ describe('DashboardComponent', () => {
 
   it('should render every navigation panel inside a dashboard-card-link', () => {
     const links = fixture.nativeElement.querySelectorAll('a.dashboard-card-link')
-    expect(links.length).toBe(component.navigationPanels.length)
+    expect(links).toHaveLength(component.navigationPanels.length)
     links.forEach((link: HTMLElement) => {
       expect(link.querySelector('p-card')).not.toBeNull()
     })
